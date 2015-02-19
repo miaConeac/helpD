@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://struts.apache.org/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+    <definition name="${YOUR_DEFINITION_HERE}">
+    </definition>
+
+    <definition name="baseLayout" path="/baseLayout.jsp">
+        <put name="header" value="/header.jsp" />
+        <put name="footer" value="/footer.jsp" />        
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put name="title" value="Login" />
+        <put name="body" value="/login.jsp" />
+    </definition>
+    <definition name="loginSuccess" extends="baseLayout">
+        <put name="title" value="LoginSucces" />
+        <put name="body" value="/logon.jsp" />
+    </definition>
+        <definition name="loginFailure" extends="baseLayout">
+        <put name="title" value="LoginFailed" />
+        <put name="body" value="/loginFailure.jsp" />
+    </definition>
+    <definition name="logoutSuccess" extends="baseLayout">
+        <put name="title" value="Logout Success" />
+        <put name="body" value="/login.jsp" />
+    </definition>
+	    <definition name="logoutFailure" extends="baseLayout">
+        <put name="title" value="Logeout Failure" />
+        <put name="body" value="/logoutFailure.jsp" />
+    </definition>
+    
+</tiles-definitions>
